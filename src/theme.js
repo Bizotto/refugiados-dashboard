@@ -29,6 +29,9 @@ export const tokens = (mode) => ({
           800: '#080b12',
           900: '#040509',
         },
+        secondary: {
+          500: '#1A4271',
+        },
 
         green: {
           100: '#dbf5ee',
@@ -89,6 +92,9 @@ export const tokens = (mode) => ({
           700: '#727681',
           800: '#a1a4ab',
           900: '#d0d1d5',
+        },
+        secondary: {
+          500: '#8DA1B8',
         },
 
         green: {

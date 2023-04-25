@@ -11,65 +11,70 @@ function MySidebar() {
   return (
     <div
       style={{
-        display: 'flex',
-        alignItems: 'center',
-        paddingBottom: '20',
-        flexDirection: 'column',
         borderRadius: '0px 20px 20px 0px',
         height: '100vh',
         width: '20%',
-        backgroundColor: colors.indigo[400],
+        backgroundColor: colors.secondary[500],
       }}
     >
-      <h1 style={{ fontWeight: 'bold' }}>Organização</h1>
-      <a
+      <div
         style={{
-          fontSize: '20px',
-          textDecoration: 'none',
-          padding: '20px',
-          color: '#ffffff',
-          fontWeight: 'bold',
+          display: 'flex',
+          alignItems: 'center',
+          paddingBottom: '20',
+          flexDirection: 'column',
         }}
-        href="/"
       >
-        Pie
-      </a>
-      <a
-        style={{
-          fontSize: '20px',
-          textDecoration: 'none',
-          padding: '20px',
-          color: '#ffffff',
-          fontWeight: 'bold',
-        }}
-        href="/"
-      >
-        Geography
-      </a>
-      <a
-        style={{
-          fontSize: '20px',
-          textDecoration: 'none',
-          padding: '20px',
-          color: '#ffffff',
-          fontWeight: 'bold',
-        }}
-        href="/"
-      >
-        Form
-      </a>
-      <a
-        style={{
-          fontSize: '20px',
-          textDecoration: 'none',
-          padding: '20px',
-          color: '#ffffff',
-          fontWeight: 'bold',
-        }}
-        href="/"
-      >
-        rurururur
-      </a>
+        <h1 style={{ fontWeight: 'bold' }}>Organização</h1>
+        <a
+          style={{
+            fontSize: '20px',
+            textDecoration: 'none',
+            padding: '20px',
+            color: '#ffffff',
+            fontWeight: 'bold',
+          }}
+          href="/"
+        >
+          Pie
+        </a>
+        <a
+          style={{
+            fontSize: '20px',
+            textDecoration: 'none',
+            padding: '20px',
+            color: '#ffffff',
+            fontWeight: 'bold',
+          }}
+          href="/"
+        >
+          Geography
+        </a>
+        <a
+          style={{
+            fontSize: '20px',
+            textDecoration: 'none',
+            padding: '20px',
+            color: '#ffffff',
+            fontWeight: 'bold',
+          }}
+          href="/"
+        >
+          Form
+        </a>
+        <a
+          style={{
+            fontSize: '20px',
+            textDecoration: 'none',
+            padding: '20px',
+            color: '#ffffff',
+            fontWeight: 'bold',
+          }}
+          href="/"
+        >
+          rurururur
+        </a>
+      </div>
     </div>
   );
 }

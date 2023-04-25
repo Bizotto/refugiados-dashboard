@@ -17,7 +17,7 @@ function Topbar() {
     <Box display="flex" justifyContent="space-between" p={2}>
       <Box
         display="flex"
-        backgroundColor={colors.primary[400]}
+        backgroundColor={colors.secondary[500]}
         borderRadius="3px"
       >
         <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
