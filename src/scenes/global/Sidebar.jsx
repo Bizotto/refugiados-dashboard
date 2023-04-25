@@ -1,55 +1,77 @@
-import React, { useState } from 'react';
-// import {
-//   ProSidebar,
-//   Menu,
-//   MenuItem,
-//   ProSidebarProvider,
-// } from 'react-pro-sidebar';
-import { Box, IconButton, typographyClasses, useTheme } from '@mui/material';
-// import 'react-pro-sidebar/dist/css/styles.css';
-// import { Link } from 'react-router-dom';
-// import HomeOutlinedIcon from '@mui/icons-material';
-// import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
-// import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
-// import ReceiptOutlinedIcon from '@mui/icons-material/ReceiptOutlined';
-// import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
-// import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
-// import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
-// import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
-// import PieChartOutlineOutlinedIcon from '@mui/icons-material/PieChartOutlineOutlined';
-// import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
-// import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-// import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import { React } from 'react';
+import { useTheme } from '@mui/material';
 import { tokens } from '../../theme';
 
-function Sidebar() {
+function MySidebar() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const [isColapsed, setIscolapsed] = useState(false);
-  const [selected, setSelected] = useState('Dashboard');
+  // const [isColapsed, setIscolapsed] = useState(false);
+  // const [selected, setSelected] = useState('Dashboard');
 
   return (
-    <Box
-      sx={{
-        '& .pro-sidebar-inner': {
-          background: `${colors.primary[400]} !important`,
-        },
-        '& .pro-icon-wrapper': {
-          backgroundColor: 'transparent !important',
-        },
-        '& .pro-inner-item': {
-          padding: '5px 35px 5px 20px !important',
-        },
-        '& .pro-inner-item:hover': {
-          color: '#868dfb !important',
-        },
-        '& .pro-menu-inner.active': {
-          color: '#6870f8 !important',
-        },
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        paddingBottom: '20',
+        flexDirection: 'column',
+        borderRadius: '0px 20px 20px 0px',
+        height: '100vh',
+        width: '20%',
+        backgroundColor: colors.indigo[400],
       }}
     >
-      aaaaaaaaaaa
-    </Box>
+      <h1 style={{ fontWeight: 'bold' }}>Organização</h1>
+      <a
+        style={{
+          fontSize: '20px',
+          textDecoration: 'none',
+          padding: '20px',
+          color: '#ffffff',
+          fontWeight: 'bold',
+        }}
+        href="/"
+      >
+        Pie
+      </a>
+      <a
+        style={{
+          fontSize: '20px',
+          textDecoration: 'none',
+          padding: '20px',
+          color: '#ffffff',
+          fontWeight: 'bold',
+        }}
+        href="/"
+      >
+        Geography
+      </a>
+      <a
+        style={{
+          fontSize: '20px',
+          textDecoration: 'none',
+          padding: '20px',
+          color: '#ffffff',
+          fontWeight: 'bold',
+        }}
+        href="/"
+      >
+        Form
+      </a>
+      <a
+        style={{
+          fontSize: '20px',
+          textDecoration: 'none',
+          padding: '20px',
+          color: '#ffffff',
+          fontWeight: 'bold',
+        }}
+        href="/"
+      >
+        rurururur
+      </a>
+    </div>
   );
 }
-export default Sidebar;
+
+export default MySidebar;

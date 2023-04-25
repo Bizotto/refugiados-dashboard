@@ -1,10 +1,11 @@
+import { ProSidebarProvider } from 'react-pro-sidebar';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { ColorModeContext, useMode } from './theme';
 import Topbar from './scenes/global/Topbar';
 import Dashboard from './scenes/Dashboard';
-import Sidebar from './scenes/global/Sidebar';
+import MySidebar from './scenes/global/Sidebar';
 // import Team from './scenes/Team';
 // import Invoices from './scenes/Invoices';
 // import Contacts from './scenes/Contacts';
@@ -23,12 +24,13 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <Sidebar />
-          <main className="content">
-            <Topbar />
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              {/* <Route path="/team" element={<Team />} />
+          <ProSidebarProvider>
+            <MySidebar />
+            <main className="content">
+              <Topbar />
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                {/* <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/form" element={<Form />} />
@@ -37,9 +39,10 @@ function App() {
               <Route path="/line" element={<Line />} />
               <Route path="/bar" element={<Bar />} />
               <Route path="/invoices" element={<Invoices />} />
-              <Route path="/calendar" element={<Calendar />} /> */}
-            </Routes>
-          </main>
+            <Route path="/calendar" element={<Calendar />} /> */}
+              </Routes>
+            </main>
+          </ProSidebarProvider>
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
