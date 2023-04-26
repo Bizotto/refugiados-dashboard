@@ -1,4 +1,4 @@
-export const geoFeatures = {
+const geoFeatures = {
   type: 'FeatureCollection',
   features: [
     {
@@ -13547,3 +13547,5 @@ export const geoFeatures = {
     },
   ],
 };
+
+export default geoFeatures;

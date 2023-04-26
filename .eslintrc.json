@@ -22,6 +22,7 @@
   ],
     "comma-dangle": ["error", "only-multiline"],
     "implicit-arrow-linebreak":"off",
-    "object-curly-newline":"off"
+    "object-curly-newline":"off",
+    "import/prefer-default-export":"off"
   }
 }
